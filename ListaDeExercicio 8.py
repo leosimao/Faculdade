@@ -71,3 +71,32 @@
 #     if(x % 2 == 1):
 #         print(x)
 #     x += 1
+
+#Faça um programa para calcular a tabuada:
+    #do 1 ao 10 para um número informado pelo usuário.
+
+# cont = 1
+# user = int(input("Digite qual é a tabuada desejada: "))
+# while(cont <= 10):
+#     result = user * cont
+#     print(f"{user} x {cont} = {result}")
+#     cont += 1
+
+    #do X ao Y para um número informado pelo usuário (o usuário também deve informar os valores de X e Y).
+
+# user_tab = int(input("Digite a tabuada desejada: "))
+# user_x = int(input("Digite onde a tabuada deve começar: "))
+# user_y = int(input("Digite onde a tabuada deve finalizar "))
+
+# if(user_y < user_x):
+#     tr = user_y
+#     user_y = user_x
+#     user_x = tr
+
+# if(user_tab != 0):
+#     while(user_x <= user_y):
+#         result = user_x * user_tab
+#         print(f"{user_tab} x {user_x} = {result}")
+#         user_x += 1
+# else:
+#     print("Impossivel calcular valores multiplicados por 0!")
