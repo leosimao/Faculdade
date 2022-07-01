@@ -109,3 +109,13 @@
 #     cont -= 1
 #     user *= cont
 #     print(user)
+
+#Sendo H = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N, faça um programa que peça ao usuário qual o termo final (N) e calcule o valor de H. 
+
+user = int(input("Digite um valor para continuarmos o calculo... "))
+h = 1 
+result = 0
+while(h < user):
+    result += (1/h)
+    h += 1
+    print(f"O Valor de h é {result:.2f}")
