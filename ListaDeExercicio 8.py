@@ -100,3 +100,12 @@
 #         user_x += 1
 # else:
 #     print("Impossivel calcular valores multiplicados por 0!")
+
+#Faça um programa que peça um número para o usuário e apresente na tela seu fatorial.
+
+# user = int(input("Digite o número que queira fatoriar: "))
+# cont = user
+# while(cont > 1):
+#     cont -= 1
+#     user *= cont
+#     print(user)
