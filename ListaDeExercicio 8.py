@@ -112,10 +112,33 @@
 
 #Sendo H = 1 + 1/2 + 1/3 + 1/4 + ... + 1/N, faça um programa que peça ao usuário qual o termo final (N) e calcule o valor de H. 
 
-user = int(input("Digite um valor para continuarmos o calculo... "))
-h = 1 
-result = 0
-while(h < user):
-    result += (1/h)
-    h += 1
-    print(f"O Valor de h é {result:.2f}")
+# user = int(input("Digite um valor para continuarmos o calculo... "))
+# h = 1 
+# result = 0
+# while(h < user):
+#     result += (1/h)
+#     h += 1
+#     print(f"O Valor de h é {result:.2f}")
+
+#Faça um programa em Python “Acertou, ganhou!” o programa deverá:
+    #Gerar um número aleatório entre 1 e 10 e pedir para o usuário digitar números até que acerte. Ao acertar, apresente uma mensagem parabenizando e finalize o programa.
+
+# import random as rd
+
+# num = rd.randint(1, 10)
+# user = int(input("Será que você está com sorte? "))
+# cont = 1
+
+# while(user != num):
+#     if(user >= 1 and user <= 10):
+#         print(f"O número aleatório foi {num}")
+#         print(f"O número digitado foi {user}")
+#         user = int(input("Não foi dessa vez tente novamente: "))
+#         num = rd.randint(1, 10)
+#         cont += 1
+#     else:
+#         print("Número inválido, digite um valor entre 1 e 10")
+#         exit()
+
+# print("Parabéns você acertou o número da sorte!")
+# print(f"Você tentou {cont} vezes!")
