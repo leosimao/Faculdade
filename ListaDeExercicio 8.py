@@ -142,3 +142,42 @@
 
 # print("Parabéns você acertou o número da sorte!")
 # print(f"Você tentou {cont} vezes!")
+
+# Faça um programa que mostre o menu a seguir, receba a opção do usuário e os dados necessários para executar cada operação. O programa será executado repetidamente até que o usuário passe o número informado para sair do programa (opção).
+# import time as tm
+# import math as mt
+
+# choose = 0
+# while(choose != 4):
+#     if( choose != 4):
+#         print('''
+#             ==== MENU ====
+#             1. Par ou impar
+#             2. Potência
+#             3. Raiz quadrada
+#             4. Sair       
+#         ''')
+#         choose = int(input("Escolha uma opção: "))
+#         if(choose == 1):
+#             user_vlr = int(input("Digite um valor para sabermos se é par ou impar: "))
+#             calc = user_vlr % 2 
+#             if(calc == 0):
+#                 print(f"O número {user_vlr} é par!")
+#             else:
+#                 print(f"O número {user_vlr} é impar!")
+#             tm.sleep(2)
+#         elif(choose == 2):
+#             user_vlrx = int(input("Digite o número que deseja que seja elevado!: "))
+#             user_vlry = int(input("Digite o expoente desejado "))
+#             calc = mt.pow(user_vlrx, user_vlry)
+#             print(f"A potência de {user_vlrx} elevado a {user_vlry} é igual a {calc}")
+#             tm.sleep(2)
+#         elif(choose == 3):
+#             user_vlr = float(input("Digite o valor que deseja realizar a raiz dele "))
+#             calc = mt.sqrt(user_vlr)
+#             print(f"A raiz quadrada de {user_vlr} é igual a {calc:.02f}!")
+#             tm.sleep(2)
+#     else:
+#         print("Saindo do programa...")
+#         tm.sleep(3)
+#         exit()
