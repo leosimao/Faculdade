@@ -181,3 +181,47 @@
 #         print("Saindo do programa...")
 #         tm.sleep(3)
 #         exit()
+
+import time as tm
+import math as mt
+
+
+def menu():
+    print('''
+        ===== MENU =====
+        1. PAR OU IMPAR
+        2. POTÊNCIA
+        3. RAIZ QUADRADA
+        4. SAIR
+    ''')
+    user = int(input("Escolha uma opção: "))
+    return user
+
+option = menu()
+
+while(option != 4):
+    if(option == 1):
+        user_num = int(input("Digite um valor para saber se é par ou impar: "))
+        if(user_num % 2 == 0):
+            print(f"O número {user_num} é par!")
+        else:
+            print(f"O número {user_num} é impar!")
+        tm.sleep(1)
+    elif(option == 2):
+        user_vlrx = int(input("Digite o valor que deseja elevar: "))
+        user_vlry = int(input("Digite o expoente: "))
+        calc = mt.pow(user_vlrx, user_vlry)
+        print(f"A potência entre {user_vlrx} elevado a {user_vlry} é igual {calc}")
+        tm.sleep(1)
+    elif(option == 3):
+        user_vlr = int(input("Digite um valor para sabermos sua raiz! "))
+        calc = mt.sqrt(user_vlr)
+        tm.sleep(1)
+        print(f"A raiz quadrada de {user_vlr} é igual a {calc}")
+    option = menu()
+
+print("Tudo bem! Nos vemos em breve...")
+tm.sleep(1)
+print("Desligando...")
+tm.sleep(2)
+exit()
