@@ -182,46 +182,88 @@
 #         tm.sleep(3)
 #         exit()
 
-import time as tm
-import math as mt
+# import time as tm
+# import math as mt
 
+
+# def menu():
+#     print('''
+#         ===== MENU =====
+#         1. PAR OU IMPAR
+#         2. POTÊNCIA
+#         3. RAIZ QUADRADA
+#         4. SAIR
+#     ''')
+#     user = int(input("Escolha uma opção: "))
+#     return user
+
+# option = 0
+
+# while(option != 4):
+#     option = menu()
+#     if(option == 1):
+#         user_num = int(input("Digite um valor para saber se é par ou impar: "))
+#         if(user_num % 2 == 0):
+#             print(f"O número {user_num} é par!")
+#         else:
+#             print(f"O número {user_num} é impar!")
+#         tm.sleep(1)
+#     elif(option == 2):
+#         user_vlrx = int(input("Digite o valor que deseja elevar: "))
+#         user_vlry = int(input("Digite o expoente: "))
+#         calc = mt.pow(user_vlrx, user_vlry)
+#         print(f"A potência entre {user_vlrx} elevado a {user_vlry} é igual {calc}")
+#         tm.sleep(1)
+#     elif(option == 3):
+#         user_vlr = int(input("Digite um valor para sabermos sua raiz! "))
+#         calc = mt.sqrt(user_vlr)
+#         tm.sleep(1)
+#         print(f"A raiz quadrada de {user_vlr} é igual a {calc:.02f}")
+#     elif(option == 4):
+#         print("Tudo bem! Nos vemos em breve...")
+#         tm.sleep(1)
+#         print("Desligando...")
+#         tm.sleep(2)
+#         exit()
+#     else:
+#         print("Opção inválida digite novamente! ")
+#         tm.sleep(0.5)
+
+# i = 100
+# cont = 0
+# while(i > 1):
+#     if(i % 4 == 0):
+#         cont += 1
+#     i -= 1
+
+# print(f"Entre 100 e 1 existe {cont} divisiveis por 4")
+
+import time as tm
 
 def menu():
     print('''
-        ===== MENU =====
-        1. PAR OU IMPAR
-        2. POTÊNCIA
-        3. RAIZ QUADRADA
-        4. SAIR
+        ==== MENU ====
+        1. Tabuada do 1 ao 10 de acordo com o valor escolhido
+        2. Apresentar os multiplos do valor escolhido entre 1 e 100
+        3. Apresentar a soma dos valores de 1 a 100
+        4. Sair
+        ==============    
     ''')
-    user = int(input("Escolha uma opção: "))
+    user = int(input("Digite uma opção: "))
     return user
 
-option = menu()
+opc = 0
 
-while(option != 4):
-    if(option == 1):
-        user_num = int(input("Digite um valor para saber se é par ou impar: "))
-        if(user_num % 2 == 0):
-            print(f"O número {user_num} é par!")
-        else:
-            print(f"O número {user_num} é impar!")
+while(opc != 4):
+    opc = menu()
+    if(opc == 1):
+        user_vlr = int(input("Digite um valor para multiplicarmos: "))
+        cont = 1
+        while(cont <= 10):
+            calc = user_vlr * cont
+            print(f"{user_vlr} x {cont} = {calc}")
+            cont += 1
         tm.sleep(1)
-    elif(option == 2):
-        user_vlrx = int(input("Digite o valor que deseja elevar: "))
-        user_vlry = int(input("Digite o expoente: "))
-        calc = mt.pow(user_vlrx, user_vlry)
-        print(f"A potência entre {user_vlrx} elevado a {user_vlry} é igual {calc}")
-        tm.sleep(1)
-    elif(option == 3):
-        user_vlr = int(input("Digite um valor para sabermos sua raiz! "))
-        calc = mt.sqrt(user_vlr)
-        tm.sleep(1)
-        print(f"A raiz quadrada de {user_vlr} é igual a {calc}")
-    option = menu()
-
-print("Tudo bem! Nos vemos em breve...")
-tm.sleep(1)
-print("Desligando...")
-tm.sleep(2)
-exit()
+    elif(opc == 2):
+        user_vlr = int(input("Digite um valor para sabermos seus multiplos: "))
+        
