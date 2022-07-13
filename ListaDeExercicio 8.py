@@ -238,32 +238,98 @@
 
 # print(f"Entre 100 e 1 existe {cont} divisiveis por 4")
 
-import time as tm
+# import time as tm
 
-def menu():
-    print('''
-        ==== MENU ====
-        1. Tabuada do 1 ao 10 de acordo com o valor escolhido
-        2. Apresentar os multiplos do valor escolhido entre 1 e 100
-        3. Apresentar a soma dos valores de 1 a 100
-        4. Sair
-        ==============    
-    ''')
-    user = int(input("Digite uma opção: "))
-    return user
+# def menu():
+#     print('''
+#         ==== MENU ====
+#         1. Tabuada do 1 ao 10 de acordo com o valor escolhido
+#         2. Apresentar os multiplos do valor escolhido entre 1 e 100
+#         3. Apresentar a soma dos valores de 1 a 100
+#         4. Sair
+#         ==============    
+#     ''')
+#     user = int(input("Digite uma opção: "))
+#     return user
 
-opc = 0
+# opc = 0
 
-while(opc != 4):
-    opc = menu()
-    if(opc == 1):
-        user_vlr = int(input("Digite um valor para multiplicarmos: "))
-        cont = 1
-        while(cont <= 10):
-            calc = user_vlr * cont
-            print(f"{user_vlr} x {cont} = {calc}")
-            cont += 1
-        tm.sleep(1)
-    elif(opc == 2):
-        user_vlr = int(input("Digite um valor para sabermos seus multiplos: "))
+# while(opc != 4):
+#     opc = menu()
+#     if(opc == 1):
+#         user_vlr = int(input("Digite um valor para multiplicarmos: "))
+#         cont = 1
+#         while(cont <= 10):
+#             calc = user_vlr * cont
+#             print(f"{user_vlr} x {cont} = {calc}")
+#             cont += 1
+#         tm.sleep(1)
+#     elif(opc == 2):
+#         user_vlr = int(input("Digite um valor para sabermos seus multiplos: "))
         
+# cont = 1
+# prd = 1
+# result = 0
+
+# while(cont != 0):
+#     vlr =  float(input(f"Digite o valor do {cont}: "))
+#     cont += 1
+#     result += vlr
+#     if (vlr == 0):
+#         cont = 0
+        
+# print("total:",result)
+# dinheiro = float(input("Valor recebido: "))
+# result = print("troco:", dinheiro - result)
+
+# prd = 1
+# vlr = 1
+# result = 0
+
+# while(vlr != 0):
+#     vlr = float(input(f"Digite o valor do Produto {prd}: "))
+#     result += vlr
+#     prd += 1
+# print(f"O total da compra foi {result}")
+# din = float(input("Valor recebido: "))
+# if(result > din):
+#     print(f"Compra não autorizado, sem saldo!")
+# else:
+#     print(f"Seu troco é: {din - result}")
+
+# c = 0
+# maior = -99999999999999
+# menor = 999999999999999
+# soma = 0
+
+# while(c <= 7): 
+#     temp = float(input(f"Digite a temperatura da {c}º cidade: "))
+#     if(temp > maior):
+#         maior = temp
+#     else:
+        
+#     c += 1
+#     soma += temp
+#     print(f"A temperatura é igual a {temp}")
+# print(f"A maior temperatura é {maior}")
+# print(f"A menor temperatura é {menor}")
+# print(f"A média de temperatura é {soma / c}")
+    
+    
+# qtN = 1
+# soma = 0
+
+# while(qtN != -1):
+#     qtN = float(input(f"Digite a {qtN:.0f}º nota "))
+#     soma += qtN
+# print(f"A média do aluno é {(soma / qtN) * -1}")
+
+# cd = 1 
+# qtC = int(input("Digite a quantidade de CD's que você possui: "))
+# soma = 0
+
+# while(cd <= qtC):
+#     vlr = float(input(f"Digite o valor do {cd:.0f}º CD "))
+#     soma += vlr
+#     cd += 1
+# print(f"A média gasta nos CD's foram de R${soma:.02f}")
